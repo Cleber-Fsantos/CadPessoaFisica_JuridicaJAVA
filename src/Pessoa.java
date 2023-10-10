@@ -5,4 +5,5 @@ public class Pessoa {
     public float CalcularImposto(float rendimento){
     return rendimento;
     }
+    public float CalcularImpostoJuridico(float rendimento){ return rendimento; }
 }
