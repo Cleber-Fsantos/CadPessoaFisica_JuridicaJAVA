@@ -1,9 +1,7 @@
 public class Pessoa {
     public String nome;
-    public float rendimento;
+    public double rendimento;
     public Endereco endereco;
-    public float CalcularImposto(float rendimento){
-    return rendimento;
-    }
-    public float CalcularImpostoJuridico(float rendimento){ return rendimento; }
+    public double CalcularImposto(double rendimento){ return rendimento; }
+    public double CalcularImpostoJuridico(double rendimento){ return rendimento; }
 }

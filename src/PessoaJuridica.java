@@ -1,8 +1,8 @@
 public class PessoaJuridica extends Pessoa{
 public String cnpj;
 public String razaoSocial;
-public float CalcularImpostoJuridico(float rendimento){
-    float resultado;
+public double CalcularImpostoJuridico(double rendimento){
+    double resultado;
     if (rendimento <= 3000){
         resultado = rendimento * 0.03f;
         return resultado;

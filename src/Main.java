@@ -44,8 +44,10 @@ public class Main {
                                 novaPF.cpf = scanner.next();
 
                                 System.out.println("Digite o rendimento mensal (somente números): ");
-                                novaPF.rendimento = scanner.nextInt();
+                                novaPF.rendimento = scanner.nextDouble();
                                 scanner.nextLine();
+
+
 
                                 System.out.println("Digite a data de nascimento (dd/MM/yyyy): ");
                                 //A variavel date recebe o Scanner convertido para DateTime e no formato dia mes e ano
@@ -95,9 +97,9 @@ public class Main {
                                         System.out.println("CPF: " + cadaPf.cpf);
                                         System.out.println("Endereço: " + cadaPf.endereco.logradouro + ", Nº: " + cadaPf.endereco.numero);
                                         System.out.println("Data de Nascimento: " + cadaPf.dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-                                        System.out.printf("Imposto a ser pago: R$ %2f", metodosPf.CalcularImposto(cadaPf.rendimento));
+                                        System.out.printf("Imposto a ser pago: R$ %.2f\n", metodosPf.CalcularImposto(cadaPf.rendimento));
                                     }
-                                    System.out.println("\nDigite 0 para continuar ");
+                                    System.out.println("\nDigite 0 para continuar... ");
                                     opcaoPf = scanner.nextInt();
                                     scanner.nextLine();
                                 } else {
@@ -137,7 +139,7 @@ public class Main {
                                 //scanner.next();
 
                                 System.out.println("Digite o rendimento mensal (somente números): ");
-                                novaPJ.rendimento = scanner.nextFloat();
+                                novaPJ.rendimento = scanner.nextDouble();
                                 scanner.nextLine();
 
                                 //Dados do endereço comercial
